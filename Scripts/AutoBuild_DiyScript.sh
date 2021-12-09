@@ -47,6 +47,7 @@ Firmware-Diy() {
 	d-team_newifi-d2)
 		patch -i ${CustomFiles}/mac80211_d-team_newifi-d2.patch package/kernel/mac80211/files/lib/wifi/mac80211.sh
 		Copy ${CustomFiles}/system_d-team_newifi-d2 ${base_files}/etc/config system
+		sed -i 's/OpenWrt/ZYZH-Router/g' package/base-files/files/bin/config_generate
 		[[ ${OP_REPO_NAME} == lede ]] && sed -i "/DEVICE_COMPAT_VERSION := 1.1/d" target/linux/ramips/image/mt7621.mk
 	;;
 	esac
