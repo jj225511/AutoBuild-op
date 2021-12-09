@@ -271,7 +271,7 @@ Firmware-Diy_End() {
 	MKDIR bin/Firmware
 	SHA256_File="${Firmware_Path}/sha256sums"
 	cd ${Firmware_Path}
-	echo -e "### FIRMWARE OUTPUT ###\n$(ls -1 | egrep -v "packages|buildinfo|sha256sums|manifest")\n"
+	echo -e "### FIRMWARE OUTPUT ###\n$(ls -1 | egrep -v "packages|buildinfo|sha256sums|manifest|kernel|rootfs|factory")\n"
 	case "${TARGET_BOARD}" in
 	x86)
 		[[ ${Checkout_Virtual_Images} == true ]] && {
