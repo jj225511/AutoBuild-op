@@ -4,8 +4,8 @@
 
 Diy_Core() {
 
-	Author=小碗儿数码
-	Banner_Title="Powered by AutoBuild-Actions"
+	Author=振远
+	Banner_Title="Powered by ZYZH"
 	Default_LAN_IP=192.168.5.1
 
 	Load_Common_Config=true
