@@ -6,7 +6,7 @@ Diy_Core() {
 
 	Author=振远
 	Banner_Title="Powered by ZYZH"
-	Default_LAN_IP=192.168.5.1
+	Default_LAN_IP=192.168.2.254
 
 	Load_Common_Config=true
 	Load_CustomPackages_List=true
