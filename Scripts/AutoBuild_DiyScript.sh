@@ -51,5 +51,6 @@ Firmware-Diy() {
 		[[ ${OP_REPO_NAME} == lede ]] && sed -i "/DEVICE_COMPAT_VERSION := 1.1/d" target/linux/ramips/image/mt7621.mk
 	;;
 	esac
-
+        sed -i 's/OpenWrt/ZYZH-Router/g' package/base-files/files/bin/config_generate
+	sed -i 's/OpenWrt/ZYZH-Router/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 }
