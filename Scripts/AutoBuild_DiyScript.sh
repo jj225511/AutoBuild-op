@@ -10,15 +10,15 @@ Diy_Core() {
 
 	Load_Common_Config=true
 	Load_CustomPackages_List=true
-	Short_Firmware_Date=true
+	Short_Firmware_Date=false
 	Checkout_Virtual_Images=false
 	Firmware_Format=false
 	REGEX_Skip_Checkout="packages|buildinfo|sha256sums|manifest|kernel|rootfs|factory"
 
-	INCLUDE_AutoBuild_Features=true
+	INCLUDE_AutoBuild_Features=false
 	INCLUDE_DRM_I915=true
 	INCLUDE_Argon=true
-	INCLUDE_Obsolete_PKG_Compatible=false
+	INCLUDE_Obsolete_PKG_Compatible=true
 }
 
 Firmware-Diy() {
