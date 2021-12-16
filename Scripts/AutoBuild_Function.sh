@@ -62,10 +62,10 @@ Firmware-Diy_Before() {
 	}
 	case "${TARGET_BOARD}" in
 	x86)
-		AutoBuild_Firmware='AutoBuild-${OP_REPO_NAME}-${TARGET_PROFILE}-${CURRENT_Version}-${FW_Boot_Type}-$(Get_SHA256 $1).${Firmware_Format_Defined}'
+		AutoBuild_Firmware='AutoBuild-ZYZH-${OP_REPO_NAME}-${TARGET_PROFILE}-${CURRENT_Version}-${FW_Boot_Type}-$(Get_SHA256 $1).${Firmware_Format_Defined}'
 	;;
 	*)
-		AutoBuild_Firmware='AutoBuild-${OP_REPO_NAME}-${TARGET_PROFILE}-${CURRENT_Version}-$(Get_SHA256 $1).${Firmware_Format_Defined}'
+		AutoBuild_Firmware='AutoBuild-ZYZH-${OP_REPO_NAME}-${TARGET_PROFILE}-${CURRENT_Version}-$(Get_SHA256 $1).${Firmware_Format_Defined}'
 	;;
 	esac
 	cat >> ${Home}/VARIABLE_Main <<EOF
